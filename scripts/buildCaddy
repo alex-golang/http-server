@@ -1,0 +1,12 @@
+export PWD=`pwd`
+go get github.com/mholt/caddy/caddy
+go get github.com/caddyserver/builds
+#
+# local version
+#
+( cd $GOPATH/src/github.com/mholt/caddy/caddy && go run build.go )
+#
+# copy to bin
+#
+mkdir -p ${PWD}/bin
+cp -L $GOPATH/src/github.com/mholt/caddy/caddy/caddy ${PWD}/bin/
