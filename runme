@@ -1,1 +1,1 @@
-./bin/fileserver -addrTLS 0.0.0.0:8081 -keyFile ./ssl/ssl-cert-snakeoil.key -certFile ./ssl/ssl-cert-snakeoil.pem -addr 0.0.0.0:8080 -dir ./dist
+./bin/fileserver-linux -addrTLS 0.0.0.0:8081 -keyFile ./fileserver/ssl/ssl-cert-snakeoil.key -certFile ./fileserver/ssl/ssl-cert-snakeoil.pem -addr 0.0.0.0:8080 -dir ./dist
